@@ -21,7 +21,7 @@ public class ReflectionTest {
 		
 		try {
 			Object m = Class.forName("java.util.Random").newInstance();
-			System.out.println(m);
+			System.out.println(m.getClass().getName());
 		} catch (InstantiationException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
