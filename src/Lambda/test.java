@@ -125,6 +125,9 @@ public class test {
 	 * @param salary 要筛选的员工的工资
 	 */
 	public void defineFilterChangeSalary(List<Person> programmer,int salary) {
+		
+		
+		
 		Predicate<Person> sa = (e) -> (e.getSalary() > salary);
 		System.out.println("姓名" + "\t\t" + "薪水");
 		programmer.stream()
@@ -170,7 +173,7 @@ public class test {
 	
 	/**
 	 * 此方法输出薪水最高和最低的员工信息
-	 * @param programmer List<Person> 类型的集合
+	 * @param programmer List<Person>c 类型的集合
 	 */
 	public void minAndMax(List<Person> programmer) {
 		Person min = programmer
