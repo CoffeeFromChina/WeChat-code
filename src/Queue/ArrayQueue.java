@@ -1,4 +1,4 @@
-package CollectionQueue;
+package Queue;
 
 /**
  * 基于数组实现的顺序队列
