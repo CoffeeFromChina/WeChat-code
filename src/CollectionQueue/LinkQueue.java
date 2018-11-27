@@ -1,4 +1,4 @@
-package Queue;
+package CollectionQueue;
 
 /**
  * 基于链表实现的队列
