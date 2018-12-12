@@ -20,6 +20,10 @@ public class ToolkitTest extends JFrame{
 		JFrame f = new JFrame();
 		JButton b = new JButton("我是按钮");
 		
+		//设置宽度和高度
+		width = width/5;
+		height = height/10;
+		
 		//设置框架大小
 		f.setSize(width, height);
 		//设置框架标题
