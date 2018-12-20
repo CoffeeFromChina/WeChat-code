@@ -61,18 +61,22 @@ class Component2D extends JComponent{
 		Rectangle2D r2 = new Rectangle2D.Double(leftX, topY, width, height);
 		g2.draw(r2);
 	}
+	
+	//绘制线条
 	public void paintLine(Graphics2D g2) {
 		Line2D line1 = new Line2D.Double(leftX, topY, leftX+width, topY+height );
 		Line2D line2 = new Line2D.Double(leftX, topY+height, leftX+width, topY);
 		g2.draw(line1);
 		g2.draw(line2);
 	}
-	//
+	
+	//绘制椭圆
 	public void paintEllipse(Graphics2D g2) {
 		//绘制椭圆时可以传参数，也可以传入一个矩形对象
 		Ellipse2D ell = new Ellipse2D.Double(leftX, topY, width, height);
 		g2.draw(ell);
 	}
+	
 	//绘制圆形
 	public void paintCircle(Graphics2D g2) {
 		
@@ -88,6 +92,7 @@ class Component2D extends JComponent{
 		circle.setFrameFromCenter(centx, centy, centx+raidus, centy+raidus);
 		g2.draw(circle);
 	}
+	
 	//返回的是框架的大小
 	public Dimension getPreferredSize() {
 		return new Dimension(DEFAULT_WIDTH, DEFAULT_HRIGHT);
